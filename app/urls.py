@@ -15,3 +15,4 @@ app.permanent_session_lifetime  = timedelta(
 # Main resolvers
 ##############################################################################
 app.add_url_rule('/', view_func=base.IndexView.as_view('index'))
+app.add_url_rule('/needs', view_func=base.NeedsView.as_view('needs'))

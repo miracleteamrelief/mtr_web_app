@@ -1,116 +1,17 @@
-<html>
-    <head>
-        <title>Miracle Team Relief</title>
-        <style>
-            body {
-                margin: 0;
-                font-family: Avenir;
-            }
-            a {
-                text-decoration: none;
-                color: black;
-            }
-            #header {
-                padding: .5em;
-                background-color: orange;
-                font-size: 2em;
-                font-weight: bold;
-            }
-            #tagline {
-                font-size: .48em;
-                font-weight: normal;
-                margin-top: -.4em;
-            }
-            #nav {
-                padding: .2em;
-                background-color: rgb(230, 220, 220);
-                padding-left: 1em;
-            }
-            .option, .option a {
-                padding: 0 1em 0 1em;
-            }
-            .option:hover, .option a:hover {
-                background: linear-gradient(rgb(200, 200, 200), rgb(150, 150, 150));
-                padding: .17em 1em .17em 1em;
-                color: white;
-            }
-            .option:active, .option a:active {
-                background: linear-gradient(rgb(150, 150, 150), rgb(200, 200, 200));
-                color: rgb(235, 235, 235);
-            }
-            .admin {
-                float: right;
-            }
-            .admin:hover {
-                margin-top: -.17em;
-            }
-            #main {
-            }
-            #mainMessage {
-                padding: 2em;
-            }
-            #mainBody {
-                width: 50%
-                margin: auto;
-            }
-            button {
-                border: none;
-                padding: .5em 1em .5em 1em;
-                background-color: rgb(211, 221, 237);
-                color: rgb(50, 50, 50);
-                font-size: 1.2em;
-                border-radius: .2em;
-                box-shadow: 3px 5px 10px rgb(230, 230, 230);
-            }
-            button:hover {
-                background-color: rgb(122, 147, 188);
-                color: white;
-            }
-            #noOneLeftOut {
-                text-shadow: 1px 2px rgb(220, 220, 220);
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">Miracle Team Relief</div>
-            <div id="tagline"><i>No One Left Out Through Collaboration</i></div>
-        </div>
-        <div id="nav">
-            <span class="option" onclick="needs();">Needs</span>
-            <span class="option" onclick="volunteers();">Volunteers</span>
-            <span class="option" onclick="shelters();">Shelters</span>
-            <span class="option" onclick="supplies();">Supplies</span>
-            <span class="option" onclick="vehicles();">Vehicles</span>
-            <span class="option" onclick="distribution_centers();">Distribution Centers</span>
-            <span class="option admin"><a href="http://ct-rei.com/harveymiracleteam/login" target="_blank">Login</a></span>
-        </div>
-        <div id="main">
-            <div id="mainMessage"><center style="font-size: 1.4em;">Welcome To Miracle Team Relief</center></div>
+{% extends "layout.html" %}
+
+{% block main %}
+<div id="main">
+    <div id="mainMessage"><center style="font-size: 1.75em;">What We Are Causing in the World</center></div>
+    <div id="mainBody">
+        <center>
             <div id="mainBody">
-                <center>
-                    <div style="font-weight: bold">What We Are Causing:</div>
-                    <div id="mainBody">
-                        <div style="width:40%;text-align: justify; margin-bottom: 3em">
-                            <p>Standing in the possibility of <span id="noOneLeftOut">no one left out</span>, The Miracle Team creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
-                            <p>To use the Harvey Miracle Team site, click the button below or click the login link on the right side of the nav bar above.</p>
-                        </div>
-                        <p><button onclick="hmt();">Harvey Miracle Team</button></p>
-                    </div>
-                </center>
+                <div style="width:40%;text-align: justify; margin-top: -.5em">
+                    <p>Standing in the possibility of <u>no one left out</u>, The Miracle Team creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+                    <p>To use the Harvey Miracle Team site, click the button below or click the login link on the right side of the nav bar above.</p>
+                </div>
             </div>
-        </div>
-    </body>
-    <script>
-        var needs = function() { alert("Check back soon for more information on Needs."); }
-        var volunteers = function() { alert("Check back soon for more information on Volunteers."); }
-        var shelters = function() { alert("Check back soon for more information on Shelters."); }
-        var supplies = function() { alert("Check back soon for more information on Supplies."); }
-        var vehicles = function() { alert("Check back soon for more information on Vehicles."); }
-        var distribution_centers = function() { alert("Check back soon for more information on Distribution Centers."); }
-        var hmt = function() {
-            var win = window.open("http://ct-rei.com/hmt", "_blank");
-            win.focus();
-        }
-    </script>
-</html>
+        </center>
+    </div>
+</div>
+{% endblock %}

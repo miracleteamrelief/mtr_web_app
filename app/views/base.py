@@ -18,3 +18,8 @@ class IndexView(BaseView):
 
 	def get(self):
 		return render_template('index.html')
+
+class NeedsView(BaseView):
+
+    def get(self):
+        return render_template('needs.html')
