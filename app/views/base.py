@@ -23,3 +23,8 @@ class NeedsView(BaseView):
 
     def get(self):
         return render_template('needs.html')
+
+class VolunteersView(BaseView):
+
+    def get(self):
+        return render_template('volunteers.html')        

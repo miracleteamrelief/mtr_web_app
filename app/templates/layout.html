@@ -25,14 +25,13 @@
             #nav {
                 padding: .2em;
                 background-color: rgb(230, 220, 220);
-                /*padding-left: .5em;*/
             }
             .option, .option a {
-                padding: 0 .75em 0 .75em;
+                padding: 0 .5em 0 .5em;
             }
             .option:hover, .option a:hover {
                 background: linear-gradient(rgb(200, 200, 200), rgb(150, 150, 150));
-                padding: .17em .75em .17em .75em;
+                padding: .17em .5em .17em .5em;
                 color: white;
             }
             .option:active, .option a:active {
@@ -48,11 +47,13 @@
             #main {
             }
             #mainMessage {
-                padding: 2em;
+                padding: 1em;
+                font-size: 2em;
             }
             #mainBody {
                 width: 50%
                 margin: auto;
+                font-size: 1.25em;
             }
             button {
                 border: none;
@@ -81,7 +82,7 @@
         </div>
         <div id="nav">
             <span class="option"><a href="/needs">Needs</a></span>
-            <span class="option" onclick="volunteers();">Volunteers</span>
+            <span class="option"><a href="/volunteers">Volunteers</a></span>
             <span class="option" onclick="shelters();">Shelters</span>
             <span class="option" onclick="supplies();">Supplies</span>
             <span class="option" onclick="vehicles();">Vehicles</span>
@@ -89,10 +90,9 @@
             <span class="option admin"><a href="http://ct-rei.com/harveymiracleteam/login" target="_blank">Login</a></span>
         </div>
         {% block main %}{% endblock %}
-        <center><button onclick="hmt();" style="margin-top: 1.5em;">Harvey Miracle Team</button></center>
+        <center><button onclick="hmt();" style="margin-top: 1.5em;margin-bottom: 5em">Harvey Miracle Team</button></center>
     </body>
     <script>
-        var volunteers = function() { alert("Check back soon for more information on Volunteers."); }
         var shelters = function() { alert("Check back soon for more information on Shelters."); }
         var supplies = function() { alert("Check back soon for more information on Supplies."); }
         var vehicles = function() { alert("Check back soon for more information on Vehicles."); }
