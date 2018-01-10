@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Avenir;
+    color: rgb(50, 50, 50);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#header {
+    padding: .5em;
+    background-color: orange;
+    font-size: 2em;
+    font-weight: bold;
+}
+#tagline {
+    font-size: .48em;
+    font-weight: normal;
+    margin-top: -.4em;
+}
+#nav {
+    padding: .2em;
+    background-color: rgb(230, 220, 220);
+}
+.option, .option a {
+    padding: 0 .5em 0 .5em;
+}
+.option:hover, .option a:hover {
+    background: linear-gradient(rgb(200, 200, 200), rgb(150, 150, 150));
+    padding: .17em .5em .17em .5em;
+    color: white;
+}
+.option:active, .option a:active {
+    background: linear-gradient(rgb(150, 150, 150), rgb(200, 200, 200));
+    color: rgb(235, 235, 235);
+}
+.admin {
+    float: right;
+}
+.admin:hover {
+    margin-top: -.17em;
+}
+#main {
+}
+#mainMessage {
+    padding: 1em;
+    font-size: 2em;
+}
+#mainBody {
+    width: 50%
+    margin: auto;
+    font-size: 1.25em;
+}
+button {
+    border: none;
+    padding: .4em 1em .5em 1em;
+    background: linear-gradient(rgb(123, 155, 206), rgb(73, 104, 153));
+    color: white;
+    font-size: 1.2em;
+    border-radius: .2em;
+}
+button:hover {
+    background-color: rgb(104, 139, 196);
+    box-shadow: 3px 5px 20px rgb(230, 230, 230);
+    text-shadow: 0 2px rgb(35, 35, 35);
+}
+button:active {
+    background: linear-gradient(rgb(73, 104, 153), rgb(123, 155, 206));
+}
