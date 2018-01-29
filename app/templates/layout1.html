@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 margin: 0;
@@ -31,16 +32,20 @@
                 background: linear-gradient(rgb(190, 224, 190), rgb(235, 244, 235));
             }
             #header {
-                padding: .8em 2em .8em 2em;
+                padding: .8em 2em .4em 2em;
                 box-shadow: 1px 5px 10px rgb(220, 220, 220);
                 background-color: rgb(250, 250, 250);
+                /*border: 1px solid silver;*/
                 position: fixed;
                 width: 100%;
                 margin-top: -6.5em;
             }
+            #logo:hover {
+                text-shadow: 1px 5px 10px silver;
+            }
             .alliteration {
                 color: rgb(120, 0, 0);
-                font-size: 1.1em;
+                /*font-size: 1.1em;*/
             }
             .admin {
                 float: right;
@@ -51,9 +56,9 @@
             }
             #donate {
                 /*text-shadow: 1px 1px 3px silver;*/
-                margin-top: -.3em;
+                margin-top: -.4em;
             }
-            #navBar {
+            #navbar {
                 /*clear: both;*/
                 margin: 6.5em 0;
             }
@@ -85,16 +90,116 @@
                 box-shadow: 1px 5px 10px rgb(220, 220, 220);
                 background-color: rgb(250, 250, 250);
             }
+            @media (max-width: 844px) {
+                #header {
+                    font-size: .85em;
+                    margin-top: -5.5em;
+                }
+                #navbar {
+                    margin-top: 4.7em;
+                }
+                .nav {
+                    font-size: .8em;
+                    margin-left: -.375em;
+                }
+                .admin {
+                    /*font-size: .8em;*/
+                }
+                #main {
+                    margin: -2.5em auto 7em auto;
+                    font-size: 1.15em;
+                }
+            }
+            @media (max-width: 758px) {
+                #header {
+                    font-size: .8em;
+                    margin-top: -5.6em;
+                }
+                #navbar {
+                    margin-top: 4.5em;
+                }                
+                .nav {
+                    font-size: .8em;
+                    margin-left: -.4em;
+                }
+                .admin {
+                    /*font-size: .6em;*/
+                }
+                #main {
+                    margin: -2.75em auto 7em auto;
+                    font-size: 1.05em;
+                }
+            }
+            @media (max-width: 675px) {
+                #header {
+                    font-size: .75em;
+                    margin-top: -5.3em;
+                }
+                #navbar {
+                    margin-top: 4em;
+                }                
+                .nav {
+                    font-size: .6em;
+                    margin-left: -.4em;
+                }
+                .admin {
+                    /*font-size: .5em;*/
+                }
+                #main {
+                    margin: -4em auto 7em auto;
+                    font-size: .95em;
+                }
+            }
+            @media (max-width: 595px) {
+                #header {
+                    font-size: .7em;
+                    margin-top: -5.4em;
+                }
+                #navbar {
+                    margin-top: 3.75em;
+                }
+                .nav {
+                    font-size: 8px;
+                    margin-left: -.4em;
+                }
+                .admin {
+                    font-size: .5em;
+                }
+                #main {
+                    margin: -5em auto 7em auto;
+                    font-size: .85em;
+                }
+            }
+            @media (min-width: 400px) and (max-width: 500px) {
+                #header {
+                    font-size: .6em;
+                    margin-top: -5em;
+                }
+                #navbar {
+                    margin-top: 3em;
+                }
+                .nav {
+                    font-size: 7px;
+                    margin-left: -.7em;
+                }
+                .admin {
+                    font-size: .5em;
+                }
+                #main {
+                    margin: -6em auto 7em auto;
+                    font-size: .75em;
+                }
+            }
         </style>
     </head>
     <body>
         <div id="header">
-            <span style="text-shadow:1px 1px 2px silver"><b><a href="/">MRCL</a></b></span> | <span class="alliteration">M</span>iracle <span class="alliteration">R</span>elief <span class="alliteration">C</span>ollaboration <span class="alliteration">L</span>eague
+            <span style="text-shadow:1px 1px 2px silver"><b><a href="/" id="logo">MRCL</a></b></span> | <span class="alliteration">M</span>iracle <span class="alliteration">R</span>elief <span class="alliteration">C</span>ollaboration <span class="alliteration">L</span>eague
             <span class="admin" style="margin-right: 4em;"><a href="/login">Login</a></span>
             <span class="admin"><a href="/signup">Signup</a></span>
             <span class="admin donate"><a href="/donate"><button id="donate">Donate</button></a></span>
         </div>
-        <div id="navBar">
+        <div id="navbar">
             <center>
                 <a href="/needs"><span class="nav">Assistance Requests</span></a>
                 <a href="/volunteers"><span class="nav">Volunteers</span></a>
@@ -108,7 +213,16 @@
         </div>
         <div id="main">
             <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
-            <!-- <p id="donate"><center><button>Partner with us</button></center></p> -->
+<!--             <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+            <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p> -->
+
         </div>
         <div id="footer"></div>
     </body>
