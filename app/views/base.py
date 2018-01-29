@@ -7,6 +7,7 @@ from flask import (
     url_for,
     abort)
 from flask.views import MethodView
+from controllers import base
 from logger import logger
 
 class BaseView(MethodView):
