@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Miracle Relief Collaboration League</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/layout.css">
+    </head>
+    <body>
+        <div id="header">
+            <a href="/">
+                <div id="logo">MRCL</div>
+                <div id="tagline"><i>Miracle Relief Collaboration League</i></div>
+            </a>
+        </div>
+        <div id="nav">
+            <span class="option"><a href="/needs">Needs</a></span>
+            <span class="option"><a href="/volunteers">Volunteers</a></span>
+            <span class="option" onclick="shelters();">Shelters</span>
+            <span class="option" onclick="supplies();">Supplies</span>
+            <span class="option" onclick="vehicles();">Vehicles</span>
+            <span class="option" onclick="distribution_centers();">Distribution Centers</span>
+            <span class="option" onclick="colloborators();">Collaborators</span>
+            <span class="option" onclick="events();">Events</span>
+            <span class="option admin"><a href="http://ct-rei.com/harveymiracleteam/login" target="_blank">Login</a></span>
+        </div>
+        {% block main %}{% endblock %}
+        <center><button onclick="hmt();" style="margin-top: 1.5em;margin-bottom: 5em">Harvey Miracle Team</button></center>
+    </body>
+    <script>
+        var shelters = function() { alert("Check back soon for more information on Shelters."); }
+        var supplies = function() { alert("Check back soon for more information on Supplies."); }
+        var vehicles = function() { alert("Check back soon for more information on Vehicles."); }
+        var distribution_centers = function() { alert("Check back soon for more information on Distribution Centers."); }
+        var hmt = function() {
+            var win = window.open("http://ct-rei.com/hmt", "_blank");
+            win.focus();
+        }
+    </script>
+</html>
