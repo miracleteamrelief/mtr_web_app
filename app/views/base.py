@@ -28,6 +28,21 @@ class IndexView(BaseView):
     def get(self):
         return render_template('index.html')
 
+class SignupView(BaseView):
+
+    def get(self):
+        return render_template('signup.html')
+
+class LoginView(BaseView):
+
+    def get(self):
+        return render_template('login.html')
+
+class DonateView(BaseView):
+
+    def get(self):
+        return render_template('donate.html')
+
 class NeedsView(BaseView):
 
     def get(self):
@@ -37,3 +52,33 @@ class VolunteersView(BaseView):
 
     def get(self):
         return render_template('volunteers.html')
+
+class ContributorsView(BaseView):
+
+    def get(self):
+        return render_template('contributors.html')
+
+class ResourcesView(BaseView):
+
+    def get(self):
+        return render_template('resources.html')
+
+class CollaboratorsView(BaseView):
+
+    def get(self):
+        return render_template('collaborators.html')
+
+class TeamsView(BaseView):
+
+    def get(self):
+        return render_template('teams.html')
+
+class LiaisonView(BaseView):
+
+    def get(self):
+        return render_template('liaison.html')
+
+class EventsView(BaseView):
+
+    def get(self):
+        return render_template('events.html')
