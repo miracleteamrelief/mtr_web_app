@@ -53,7 +53,42 @@ class ResourcesController(BaseController):
     def get(self):
         return self.context
 
+class ResourcesVolunteersController(BaseController):
+
+    def get(self):
+        return self.context
+
+class ResourcesVehiclesController(BaseController):
+
+    def get(self):
+        return self.context
+
+class ResourcesSuppliesController(BaseController):
+
+    def get(self):
+        return self.context
+
 class CollaboratorsController(BaseController):
+
+    def get(self):
+        return self.context
+
+class CollaboratorsSheltersController(BaseController):
+
+    def get(self):
+        return self.context
+
+class CollaboratorsDistributionCentersController(BaseController):
+
+    def get(self):
+        return self.context
+
+class CollaboratorsTeamsController(BaseController):
+
+    def get(self):
+        return self.context
+
+class CollaboratorsLiaisonsController(BaseController):
 
     def get(self):
         return self.context
