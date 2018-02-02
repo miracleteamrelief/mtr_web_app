@@ -1,37 +1,46 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Miracle Relief Collaboration League</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="/static/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
     </head>
     <body>
         <div id="header">
-            <a href="/">
-                <div id="logo">MRCL</div>
-                <div id="tagline"><i>Miracle Relief Collaboration League</i></div>
-            </a>
+            <span style="text-shadow:1px 1px 2px silver"><b><a href="/" id="logo">MRCL</a></b></span> | <span class="alliteration">M</span>iracle <span class="alliteration">R</span>elief <span class="alliteration">C</span>ollaboration <span class="alliteration">L</span>eague
+            <span class="admin" style="margin-right: 2.5em;"><a href="/login">Login</a></span>
+            <span class="admin"><a href="/about">About Us</a></span>
+            <span class="admin donate"><a href="/donate"><button id="donate">Donate</button></a></span>
         </div>
-        <div id="nav">
-            <span class="option"><a href="/needs">Needs</a></span>
-            <span class="option"><a href="/volunteers">Volunteers</a></span>
-            <span class="option" onclick="shelters();">Shelters</span>
-            <span class="option" onclick="supplies();">Supplies</span>
-            <span class="option" onclick="vehicles();">Vehicles</span>
-            <span class="option" onclick="distribution_centers();">Distribution Centers</span>
-            <span class="option" onclick="colloborators();">Collaborators</span>
-            <span class="option" onclick="events();">Events</span>
-            <span class="option admin"><a href="http://ct-rei.com/harveymiracleteam/login" target="_blank">Login</a></span>
+        <nav>
+            <ul>
+                <li class="currentMenuItem"><a href="/needs">Assistance Requests</a></li>
+                <li class="currentMenuItem"><a href="/contributors">Contributors</a></li>
+                <li class="currentMenuItem"><a href="/resources">Resources</a>
+                    <ul>
+                        <li><a href="/resources/volunteers">Volunteers</a></li>
+                        <li><a href="/resources/vehicles">Vehicles</a></li>
+                        <li><a href="/resources/supplies">Supplies</a></li>
+                    </ul>
+                </li>
+                <li class="currentMenuItem"><a href="">Collaborators</a>
+                    <ul>
+                        <li><a href="/collaborators/shelters">Shelters</a></li>
+                        <li><a href="/collaborators/distribution_centers">Distribution Centers</a></li>
+                        <li><a href="/collaborators/teams">Teams</a>
+                            <ul>
+                                <li><a href="/collaborators/teams/boots">Boots on the Ground</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/collaborators/liaisons">Liaisons</a></li>
+                    </ul>
+                </li>
+                <li class="currentMenuItem"><a href="/events">Events</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            {% block main %}{% endblock %}
         </div>
-        {% block main %}{% endblock %}
-        <center><button onclick="hmt();" style="margin-top: 1.5em;margin-bottom: 5em">Harvey Miracle Team</button></center>
+        <div id="footer"></div>
     </body>
-    <script>
-        var shelters = function() { alert("Check back soon for more information on Shelters."); }
-        var supplies = function() { alert("Check back soon for more information on Supplies."); }
-        var vehicles = function() { alert("Check back soon for more information on Vehicles."); }
-        var distribution_centers = function() { alert("Check back soon for more information on Distribution Centers."); }
-        var hmt = function() {
-            var win = window.open("http://ct-rei.com/hmt", "_blank");
-            win.focus();
-        }
-    </script>
 </html>
