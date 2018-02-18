@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Hind|Oxygen|Raleway|Josefin+Sans|Indie+Flower|Cabin|Play|Roboto|Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Hind|Oxygen|Raleway|Josefin+Sans|Indie+Flower|Cabin|Play|Roboto|Dancing+Script|Quicksand);
 html, body {
     font-family: Avenir;
     margin: 2em 5em 10em 5em;
@@ -288,7 +288,6 @@ tile:hover {
 }
 main {
     font-size: 24px;
-    width: 80%;
     margin: 2em auto;
 }
 input, select, option {
