@@ -1,7 +1,65 @@
-{% extends "layout.html" %}
-{% block main %}
-    <div id="mainMessage"><center>Our commitment</center></div>
-    <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
-    <p>Rather than maintaining ownership of resources, our focus is on allocation, routing, and distribution. Through comprehensive review of existing infrastructures, social patterns, data analysis, collaborative input, and past experience, we specialize in getting the right things to the right places by the right people - on time.</p>
-    <p>Google defines the term, "miracle" as "a highly improbable or extraordinary event, development, or accomplishment that brings very welcome consequences".</p>
-{% endblock %}
+<html>
+    <head>
+        <title>MRCL</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <style>
+            html, body {
+                background: #fefefe;
+            }
+            header {
+                background: linear-gradient(#ccc, #bbb);
+                margin-top: -9em;
+                box-shadow: none;
+                padding: 2.75em 2em;
+            }
+            header a {
+                color: #333;
+            }
+            p {
+                margin-bottom: 1em;
+            }
+            logo {
+                font-size: 45px;
+                font-family: Arial;
+            }
+            nav {
+                font-size: 20px;
+                padding-right: 1em;
+            }
+            admin {
+                font-size: 20px;
+            }
+            button {
+                margin: -1em 2em -1.3em 0;
+                line-height: 40px;
+                background: linear-gradient(#5a5, #080);
+                color: #ddd;
+                padding: .1em 1em;
+                /*font-weight: bold;*/
+            }
+            .currentPage a {
+                color: #fff;
+                text-shadow: 1px 2px 3px #444;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <logo><a href="/">MRCL</a></logo>
+            <nav><a>Miracle Relief Collaboration League</a></nav>
+            <div style="margin-right: 2em"></div>
+            <admin><a href="/donate"><button>Donate</button></a></admin>
+        </header>
+
+        <div style="margin-top: 9em"></div>
+
+        <main>
+            <center style="width: 90%;text-align: justify; margin: .1em auto; font-size: 25em">
+                <p>Standing in the possibility of no one left out, <i><b>M.R.C.L.</b></i> creates and promotes collaboration and communication to serve people and animals impacted by natural disaster, creating software and cooperative actions for service.</p>
+                <p>Rather than maintaining ownership of resources, our focus is on allocation, routing, and distribution. Through comprehensive review of existing infrastructures, social patterns, data analysis, collaborative input, and past experience, we specialize in getting the things to the places where they can be best utilized by inspired and motivated volunteers - on time.</p>
+            </center>
+        </main>
+        <style>a:hover { text-decoration: underline; }</style>
+        <center style="margin-top: 5em"><b>M</b>iracle <b>R</b>elief <b>C</b>ollaboration <b>L</b>eague, Inc. | <a href="mailto:info@mrcl.org">info@mrcl.org</a> | <a href="tel:5129570474">(512) 957-0474</a></center>
+    </body>
+</html>

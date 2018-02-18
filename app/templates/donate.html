@@ -1,9 +1,72 @@
-{% extends "layout.html" %}
-{% block main %}
-	<div id="mainMessage">Thank you for your interest in partnering with M.R.C.L.</div>
-	<p>We are in the deepest debt of gratitude to all those who contribute to the possiblity we are creating - that <i>no one is left out</i> in the wake of a disaster.</p>
-	<p>We are committed that the right resources make it to the right people in a timely manner, not only to those in need, but also to those who give of their time and energy to make sure things get where they need to go so that each and every person's needs are specifically attended to.</p>
-	<p>Your partnership is critical to us in fulfilling that mission: Our efforts are entirely funded by donations from the general public. <i><b>Without you, we simply could not exist</b></i>.</p>
-	<p>If you'd like to contribute alongside us as we make a real difference in the world, click the button below to view our crowd-funding campaign.</p>
-	<center><button>GoFundMe.com</button></center>
-{% endblock %}
+<html>
+    <head>
+        <title>MRCL - Donate</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <style>
+            html, body {
+                background: #fefefe;
+            }
+            header {
+                background: linear-gradient(#ccc, #bbb);
+                margin-top: -9em;
+                box-shadow: none;
+                padding: 2.75em 2em;
+            }
+            header a {
+                color: #333;
+            }
+            p {
+                margin-bottom: 1em;
+            }
+            logo {
+                font-size: 45px;
+                font-family: Arial;
+            }
+            nav {
+                font-size: 20px;
+                padding-right: 1em;
+            }
+            admin {
+                font-size: 20px;
+            }
+            button {
+                margin: -1em 2em -1.3em 0;
+                line-height: 40px;
+                background: linear-gradient(#5a5, #080);
+                color: #ddd;
+                padding: .1em 1em;
+                /*font-weight: bold;*/
+            }
+            .currentPage a {
+                color: #fff;
+                text-shadow: 1px 2px 3px #444;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <logo><a href="/">MRCL</a></logo>
+            <nav><a>Miracle Relief Collaboration League</a></nav>
+            <admin><a href="/donate"><button>Donate</button></a></admin>
+        </header>
+
+        <div style="margin-top: 9em"></div>
+
+        <main>
+            <center style="margin: 2em auto; width: 50%; font-size: 22px; text-align: justify">
+                <p>Thank you for your generosity and eagerness to partner with us financially. Your outstanding contribution to <b>M.R.C.L.</b> is vital to ensuring that no one is left out in the event of a disaster.</p>
+            </center>
+            <center>
+                <img src="/static/assets/paypal.png" width="40px" style="margin-bottom: .5em">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="DGZRA2Q5JHTHS">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </center>
+        </main>
+        <style>a:hover { text-decoration: underline; }</style>
+        <center style="margin-top: 5em"><b>M</b>iracle <b>R</b>elief <b>C</b>ollaboration <b>L</b>eague, Inc. | <a href="mailto:info@mrcl.org">info@mrcl.org</a> | <a href="tel:5129570474">(512) 957-0474</a></center>
+    </body>
+</html>
